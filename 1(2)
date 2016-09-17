@@ -1,0 +1,8 @@
+class chaintreetype
+{
+  char nodedata;
+  chaintree lsonnode;
+  chaintree rsonnode;
+  chain parentnode;
+}
+chaintrretype root=null;
