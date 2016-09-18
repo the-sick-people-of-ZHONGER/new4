@@ -1,0 +1,20 @@
+cbttype inittree()
+{
+  cbttype node;
+  if((node=new cbttype())!=null)
+  {
+    System.out.printf("enter a data of root\n");
+    node.data=input.next();
+    node.left=null;
+    node.right=null;
+    if(node!=null)
+    {
+      return node;
+    }
+    else
+    {
+      return null;
+    }
+  }
+  return null;
+}
