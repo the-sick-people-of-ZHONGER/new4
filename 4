@@ -1,0 +1,66 @@
+void addtreenode(cbttype treenode)
+{
+  cbttype pnode,parent;
+  Srting data;
+  int menusel;
+  
+  if ((pnode=new cbttype())!=null)
+  {
+    System.out.printf("enter data\n");
+    pnode.data=input.next();
+    pnode.left=null;
+    pnode.right=null;
+    
+    System.out.printf("enter parent node data");
+    data=input.next();
+    
+    parent=treefindnode(treenode,data);
+    if(parent==null)
+    {
+      System.out.printf("404 no found");
+      pnode=null;
+      return;
+    }
+    System.out.printf("enter left,enter right\n");
+    do
+    {
+      menusel=input.nextint();
+      
+      if(menusel==1||menusel==2);
+      {
+        if(parent==null)
+        {
+          System.out.printf("please set at first\n");
+        }
+      else
+      {
+        switch(menusel)
+        {
+          case 1:
+          if(parent.left!=null)
+          {
+            System.out.printf("can not be empty\n");
+          }
+          else
+          {
+            parent.left=pnode;
+          }
+          break;
+          case 2:
+          if(parent.right!=null)
+          {
+            System.out.printf("can not be empty\n");
+          }
+          else
+          {
+            parent.right=pnode;
+          }
+          break;
+        default
+          System.out.printf("no use\n");
+        }
+      }
+    }
+        }while(menusel!=1&&menusel!=2);
+  }
+}
