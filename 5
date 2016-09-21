@@ -1,0 +1,25 @@
+cbttype treefindnode(cbttype treenode,String data)
+{
+  cbttype ptr;
+  
+  if(treenode==null)
+  {
+    return null;
+  }
+  else
+  {
+    if(prt=treenode(treenode.left,data)!=null)
+    {
+      return prt;
+    }
+    else
+      if((prt=treefindnode(treenode.right,data)!=null)
+      {
+        return prt;
+      }
+      else
+      {
+        reurn null;
+      }
+  }
+}
