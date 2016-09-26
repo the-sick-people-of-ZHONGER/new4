@@ -1,0 +1,9 @@
+void cleartree(cbttype treenode)
+{
+  if(treenode!=null)
+  {
+    cleartree(treenode.left);
+    cleartree(treenode.right);
+    treenode=null;
+  }
+}
