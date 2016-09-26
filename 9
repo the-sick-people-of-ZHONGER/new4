@@ -1,0 +1,21 @@
+int treedepth(cbttype treenode)
+{
+  int depleft,depright;
+  if(treenode==null)
+  {
+    return 0;
+  }
+  else
+  {
+    depleft=treedepth(treenode.left);
+    depright=treedepth(treenode.right);
+    if(depleft>depright)
+    {
+      return depleft+1;
+    }
+    else
+    {
+      return depright+1;
+    }
+  }
+}
