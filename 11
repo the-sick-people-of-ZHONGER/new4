@@ -1,0 +1,4 @@
+void treenodedata(cbttype p)
+{
+  System.out.printf("%s",p.data);
+}
