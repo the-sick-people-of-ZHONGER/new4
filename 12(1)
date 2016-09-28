@@ -1,0 +1,28 @@
+void leveltree(cbttype treenode)
+{
+  cbttype p;
+  cbttype[] q=new cbttype[maxlen];
+  int head=0,tail=0;
+  
+  if(treenode!=null)
+  {
+    tail=(tail+1)%maxlen;
+    q[tail]=treenode;
+  }
+  while(head!=tail)
+  {
+    head=(head+1)%maxlen;
+    p=q[head];
+    treenodedata(p);
+    if(p.left!=null)
+    {
+      tail=(tail+1)%maxlen;
+      q[tail]=p.left;
+    }
+    if(p.light!=null)
+    {
+      tail=(tail+1)%maxlen;
+      q[tail]=p.right;
+    }
+  }
+}
