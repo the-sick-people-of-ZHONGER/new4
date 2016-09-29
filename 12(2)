@@ -3,7 +3,7 @@ void ldrtree(cbttype treenode)
   if(treenode!=null)
   {
     ldrtree(treenode.left);
-    treenodedata(treenode);
-    ldrtree(treenode.right);
+    dlrtree(treenode.left);
+    dlrtree(treenode.right);
   }
 }
