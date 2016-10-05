@@ -1,0 +1,9 @@
+void lrdtree(cbttype treenode)
+{
+  if(treenode!=null)
+  {
+    lrdtree(treenode.left);
+    lrdtree(treenode.right);
+    treenodedata(treenode);
+  }
+]
