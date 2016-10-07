@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+class cbttype
+{
+  String data;
+  cbttype left;
+  cbttype right;
+}
+public class p2_5
+{
+  static final maxlen=20;
+  static Scanner
