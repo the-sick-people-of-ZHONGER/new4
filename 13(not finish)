@@ -9,4 +9,30 @@ class cbttype
 public class p2_5
 {
   static final maxlen=20;
-  static Scanner
+  static Scanner input=new Scanner(system in);
+  cbttype inittree()
+  {
+    cbttype node;
+      if((node=new cbttype())!=null)
+      {
+        System.out.printf("please enter a node data\n");
+        node.data=input.next()
+        node.left=null;
+        node.right=null;
+        if(node!=null)
+        {
+          return node;
+        }
+        else
+        {
+          return null;
+        }
+      }
+      return null;
+    }
+    void addtreenode(cbttype treenode)
+    {
+      cbttype pnode.parent;
+      String data;
+      int menusel;
+      if
