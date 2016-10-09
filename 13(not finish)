@@ -35,4 +35,42 @@ public class p2_5
       cbttype pnode.parent;
       String data;
       int menusel;
-      if
+      if((pnode=new cbttype()!=null)
+      {
+        System.out.printf("enter data of tree\n");
+        pnode.data=input.next();
+        pnode.left=null;
+        pnode.right=null;
+        System.out.printf("enter parent data\n");
+        data=input.next();
+        parent=treefindnode(treenode,data);
+        if(parent==null}
+        {
+          System.out.printf("404 no found\n");
+          pnode=null;
+          return;
+        }
+        System.out.printf("1.add the node to left\n2.add the node to right\n");
+        do
+        {
+          menusel=input.nextInt();
+          if(menusel==1||meusel==2)
+          {
+            if(parent==null)
+            {
+              System.out.printf("404 no found\n");
+            }
+            else
+            {
+              switch(menusel)
+              {
+                case 1;
+                if(parent.left!=null)
+                {
+                  System.out.printf("left is not empty\n");
+                }
+                else
+                {
+                  parent.left!=pnode;
+                }
+              break;
