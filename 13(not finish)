@@ -64,7 +64,7 @@ public class p2_5
             {
               switch(menusel)
               {
-                case 1;
+                case 1:
                 if(parent.left!=null)
                 {
                   System.out.printf("left is not empty\n");
@@ -74,3 +74,48 @@ public class p2_5
                   parent.left!=pnode;
                 }
               break;
+              case 2:
+                if{(parent.right!=null)
+                {
+                  System.out.printf("right tree can not be empty\n");
+                }
+              break;
+            default:
+              System.out.printf("no use data\n");
+            }
+          }
+        }
+        while(menusel!=1&&menusel!=2);
+      }
+    }
+    cbttype treefindnode(cbttype treenode,String data)
+    {
+      cbttype ptr;
+      if(treenode==nnull)
+      {
+        return null;
+      }
+      else
+      {
+        if(treenode.data.equals(data))
+        {
+          return treenode;
+        }
+        else
+        {
+          if((ptr=treefindnode(treenode.left,data))!=null)
+          {
+            return null;
+          }
+          else
+            if((ptr=treefindnode(treenode.right,data))!=null)
+            {
+              return ptr;
+            }
+            else
+            {
+              return null;
+            }
+        }
+      }
+    }
