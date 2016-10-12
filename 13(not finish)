@@ -119,3 +119,57 @@ public class p2_5
         }
       }
     }
+    cbttype  treeleftnode(cbttype treenode)
+    {
+      if(treenode!=null)
+      {
+        return treenode.left;
+      }
+      else
+      {
+        return null;
+      }
+    }
+    cbttype treerightnode(cbttype treenode)
+    {
+      if(treenode!=null)
+      {
+        return treenode.right;
+      }
+      else
+      {
+        return null;
+      }
+    }
+    int treelsempty(cbttype treenode)
+    {
+      if(treenode!=null)
+      {
+        return 0;
+      }
+      else
+      {
+        return 1;
+      }
+    }
+    int treedepth(cbttype treenode)
+    {
+      int depleft,depright;
+      if(treenode==null)
+      {
+        return 0;
+      }
+      else
+      {
+        depleft=treedepth(treenode.left);
+        depright=treedepth(treenode.right);
+        if(depleft>depright)
+        {
+          return depleft+1;
+        }
+        else
+        {
+          return depright+1;
+        }
+      }
+    }
