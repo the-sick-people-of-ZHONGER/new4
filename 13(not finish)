@@ -208,3 +208,12 @@ public class p2_5
         }
       }
     }
+    void dlrtree(cbttype treenode)
+    {
+      if(treenode!=null)
+      {
+        treenodedata(treenode);
+        dlrtree(treenode.left);
+        dlrtree(treenode.right);
+      }
+    }
