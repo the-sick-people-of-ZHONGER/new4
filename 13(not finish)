@@ -217,3 +217,24 @@ public class p2_5
         dlrtree(treenode.right);
       }
     }
+    void ldrtree(cbttype treenode)
+    {
+      if(treenode!=null)
+      {
+        treenodedata(treenode);
+        dlrtree(treenode.left);
+        dlrtree(treenode.right);
+      }
+    }
+    void lrdtree(cbttypec treenode)
+    {
+      if(treenode!=null)
+      {
+        ldrtree(treenode.left);
+        ldrtree(treenode.right);
+        treenodedata(treenode);
+      }
+    }
+    public static void main(String[] args)
+    {
+      
