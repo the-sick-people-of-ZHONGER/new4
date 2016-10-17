@@ -237,4 +237,26 @@ public class p2_5
     }
     public static void main(String[] args)
     {
-      
+      cbttype root=null;
+      int menusel;
+      p2_5t=new p2_5();
+      root=t.inittree();
+      do
+      {
+        System.out.printf("please choose nodeof treein menu\n");
+        System.out.printf("0.quit\n");
+        System.out.printf("1.add node of tree\n");
+        menusel=input.nextInt();
+        switch(menusel)
+        {
+          case 1:
+            t.addtreenode(root);
+            break;
+          case 0:
+            break;
+          default:
+            ;
+        }
+        
+      }
+      while(menusel!=0);
