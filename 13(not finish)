@@ -260,3 +260,18 @@ public class p2_5
         
       }
       while(menusel!=0);
+      do
+      {
+        menusel=input.nextInt();
+        switch(menusel)
+        {
+          case 0:
+            break;
+          case 1:
+            t.dlrtree(root);
+            System.out.printf("\n");
+            break;
+          case 2:
+            t.ldrtree(root);
+            System.out.printf("\n");
+            break;
