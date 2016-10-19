@@ -275,3 +275,21 @@ public class p2_5
             t.ldrtree(root);
             System.out.printf("\n");
             break;
+          case 3:
+            t.lrdtree(root);
+            System.out.printf("\n"):
+            break;
+          case 4:
+            t.leveltree(root);
+            System.out.printf("\n");
+            break;
+          default:
+            ;
+        }
+      }
+      while(menusel!=0);
+      System.out.printf("\n tree's deep is:%d\n",t.treedepth(root));
+      t.cleartree(root);
+      root=null;
+    }
+  }
